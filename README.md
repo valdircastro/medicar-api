@@ -11,7 +11,7 @@
 
 ## Sobre o projeto
 
-Api para marcação de consulta (App Medicar) desenvolvido com Django Rest Framework para desafio Intmed.
+Api para marcação de consulta (App Medicar) desenvolvido com Django Rest Framework para o Desafio Intmed.
 
 ## Endpoints
 
