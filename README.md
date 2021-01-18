@@ -6,7 +6,7 @@
 2. Instalar as dependências usando `pip install -r requirements.txt`
 3. Rodar as migrações usando `python manage.py`
 4. Rodar servidor usando `python manage.py runserver`
-5. Criar um superuser suando `python manage.py createsuperuser`
+5. Criar um superuser usando `python manage.py createsuperuser`
 6. Acessar os endpoints ou o gerenciador em `127.0.0.1:8000/admin/`
 
 ## Sobre o projeto
