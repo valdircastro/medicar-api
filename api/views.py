@@ -3,6 +3,9 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
 from .filters import MedicoFilter
+from rest_framework.authentication import TokenAuthentication
+from django.contrib.auth.models import User
+
 
 from .models import (Especialidade,
                      Medico,
@@ -13,7 +16,13 @@ from .models import (Especialidade,
 from .serializers import (EspecialidadeSerializer,
                           MedicoSerializer,
                           ConsultaSerializer,
-                          AgendaSerializer)
+                          AgendaSerializer,
+                          UserSerializer)
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class EspecialidadeViewSet(viewsets.ModelViewSet):
@@ -25,6 +34,7 @@ class MedicoViewSet(viewsets.ModelViewSet):
     queryset = Medico.objects.all()
     serializer_class = MedicoSerializer
     filterset_class = MedicoFilter
+    authentication_classes = (TokenAuthentication,)
 
 
 class AgendaViewSet(viewsets.ModelViewSet):
