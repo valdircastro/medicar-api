@@ -2,12 +2,12 @@
 
 ## Como rodar
 
-1. Após clonar o projeto, criar um virtual enviroment e ativa-lo
-2. Instalar as dependências usando `pip install -r requirements.txt`
-3. Rodar as migrações usando `python manage.py`
-4. Rodar servidor usando `python manage.py runserver`
-5. Criar um superuser usando `python manage.py createsuperuser`
-6. Acessar os endpoints ou o gerenciador em `127.0.0.1:8000/admin/`
+1. Após clonar o projeto, criar um virtual enviroment e ativa-lo.
+2. Instalar as dependências usando `pip install -r requirements.txt`.
+3. Rodar as migrações usando `python manage.py`.
+4. Rodar servidor usando `python manage.py runserver`.
+5. Criar um superuser usando `python manage.py createsuperuser`.
+6. Acessar os endpoints ou o gerenciador em `127.0.0.1:8000/admin/`.
 7. Todos o endpoints necessitam de autenticação.
 
 ## Sobre o projeto
